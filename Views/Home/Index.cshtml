@@ -3,22 +3,23 @@
 	<title>AddressBook</title>
 	<link rel="stylesheet" href="/css/styles.css">
 </head> 
-<body> 
-	<div id="landingPage" class="well">
-		<h1>WELCOME TO YOUR ADDRESS BOOK</h1>
-		<br><br>
-		@foreach (var contact in Model)     
-		{          
-			if (contact !=null)         
-			{             
-				<li><strong><a href='/contact/@contact.GetId()'>@contact.GetName()</a></strong></li>
-			}
+<div id="landingPage" class="well">
+	<h1>WELCOME TO YOUR ADDRESS BOOK</h1>
+	<br>
+	<br>
+	@foreach (var contact in Model)     
+	{          
+		if (contact !=null)         
+		{             
+			<li><strong><a href='/contact/@contact.GetId()'>@contact.GetName()</a></strong></li>
 		}
-		<h2><a href="/contact/create">Add Contact</a></h2> 
-		<br><br>
-		<h2><a href="/contact/deleteall">Delete All Contacts</a></h2> 
-	</div>
-	<style>
+	}
+	<h2><a href="/contact/create">Add Contact</a></h2> 
+	<br>
+	<br>
+	<h2><a href="/contact/deleteall">Delete All Contacts</a></h2> 
+</div>
+<style>
 	#landingPage
 	{
 		background-color: #FFFFCC;		
@@ -30,8 +31,7 @@
 		font-size: 20px;
 	}
 	li
-{
-font-size: 16px;
-}
+	{
+		font-size: 16px;
+	}
 </style>
-</body>
