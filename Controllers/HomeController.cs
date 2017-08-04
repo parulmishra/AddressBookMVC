@@ -48,5 +48,12 @@ namespace AddressBook.Controllers
 			Contact.ClearAllIds();  
 			return View();   
 		}  
+		[HttpPost("/search")]
+		public ActionResult Search()
+		{
+			string name = Request.Form["search"];
+			var contacts = Contact.SearchContact(name);
+			return View("Index", contacts);
+		}
 	}
 }

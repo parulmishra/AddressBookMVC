@@ -51,5 +51,17 @@ namespace AddressBook.Models
 		{             
 			return _addressBook;         
 		}
-  }
+		public static List<Contact> SearchContact(string name)
+		{
+			List<Contact> result = new List<Contact>();
+			foreach(var contact in _addressBook)
+			{
+				if (contact.GetName().Contains(name))
+				{
+						result.Add(contact);
+				}
+			}
+			return result;
+		}
+    }
 }
