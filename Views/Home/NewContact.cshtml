@@ -1,7 +1,15 @@
 <h1>WELCOME TO YOUR ADDRESS BOOK</h1>
 <br><br>
 <h3>Yay! You added a new contact</h3>
-<ul>     
-	 
-</ul>
-<button id="addcontact" type="button" class="btn btn-primary btn-lg"><a href="/">View All Contacts</a></button> 
+
+<p>Name: @Model.GetName()</p>
+<p>Name: @Model.GetPhoneNumber()</p>
+<p>Name: @Model.GetAddress().GetHouseNumber()</p>
+<p>Name: @Model.GetAddress().GetStreetAddress()</p>
+<p>Name: @Model.GetAddress().GetCity()</p>
+<p>Name: @Model.GetAddress().GetState()</p>
+<p>Name: @Model.GetAddress().GetPinCode()</p>
+<p>Name: @Model.GetAddress().GetCountry()</p>
+
+
+<button id="addcontact" type="button" class="btn btn-primary btn-lg"><a href="/">View All Contacts</a></button>

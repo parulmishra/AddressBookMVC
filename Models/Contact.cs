@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AddressBookMVC.Models
+namespace AddressBook.Models
 {
 	public class Contact
     {         
@@ -13,11 +13,11 @@ namespace AddressBookMVC.Models
 		
 		public Contact(string name, string phoneNumber, Address address)
 		{             
-			this._name = name;
-			this._phoneNumber = phoneNumber;
-			this._address = address;
+			_name = name;
+			_phoneNumber = phoneNumber;
+			_address = address;
 			_addressBook.Add(this);
-			this._id = _addressBook.Count; 
+			_id = _addressBook.Count; 
 		}        
 		public int GetId()
 		{

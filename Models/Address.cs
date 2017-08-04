@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AddressBookMVC.Models
+namespace AddressBook.Models
 {
 	public class Address    
 	{         
@@ -36,7 +36,7 @@ namespace AddressBookMVC.Models
 		{             
 			return _pincode; 
 		}         
-		public string GetStater()
+		public string GetState()
 		{             
 			return _state;         
 		}         

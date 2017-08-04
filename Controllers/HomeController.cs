@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using AddressBookMVC.Models;
+using AddressBook.Models;
 
-namespace AddressBookMVC.Controllers
+namespace AddressBook.Controllers
 {
 	public class HomeController : Controller  
 	{         
@@ -13,17 +13,20 @@ namespace AddressBookMVC.Controllers
 			List<Contact> contacts = Contact.GetAllContacts();
 			return View(contacts);         
 		}
+		
 		[HttpGet("/contact/{id}")]   
 		public ActionResult GetContact(int id)
 		{             
 			Contact contact = Contact.Find(id); 
 			return View(contact);   
-		}        
+		}     
+		
 		[HttpGet("/contact/create")]
 		public ActionResult CreateContact()  
 		{         
 			return View(); 
-		}         
+		}  
+		
 		[HttpPost("/contact/new")] 
 		public ActionResult NewContact()   
 		{   
@@ -31,13 +34,15 @@ namespace AddressBookMVC.Controllers
 			Contact contact = new Contact(Request.Form["name"], Request.Form["phonenumber"], address);  
 			return View(contact);
 		}   
-		[HttpGet("/addressbook/delete/{id}")]
+		
+		[HttpGet("/contact/delete/{id}")]
 		public ActionResult DeleteContact(int id)        
 		{  
 			Contact.Delete(id);
 			return View(); 
-		}        
-		[HttpGet("/addressbook/deleteall")] 
+		}    
+		
+		[HttpGet("/contact/deleteall")] 
 		public ActionResult DeleteAllContact()  
 		{          
 			Contact.ClearAllIds();  

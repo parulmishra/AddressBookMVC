@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace HangmanGame
+namespace AddressBook
 {
     public class Program
     {
@@ -16,4 +16,5 @@ namespace HangmanGame
 
             host.Run();
         }
+	}
 }

@@ -1,0 +1,8 @@
+C:\Users\amdubedy\Documents\learn\AddressBookMVC\bin\Debug\netcoreapp1.1\AddressBookMVC.deps.json
+C:\Users\amdubedy\Documents\learn\AddressBookMVC\bin\Debug\netcoreapp1.1\AddressBookMVC.runtimeconfig.json
+C:\Users\amdubedy\Documents\learn\AddressBookMVC\bin\Debug\netcoreapp1.1\AddressBookMVC.runtimeconfig.dev.json
+C:\Users\amdubedy\Documents\learn\AddressBookMVC\bin\Debug\netcoreapp1.1\AddressBookMVC.dll
+C:\Users\amdubedy\Documents\learn\AddressBookMVC\bin\Debug\netcoreapp1.1\AddressBookMVC.pdb
+C:\Users\amdubedy\Documents\learn\AddressBookMVC\obj\Debug\netcoreapp1.1\AddressBookMVC.AssemblyInfo.cs
+C:\Users\amdubedy\Documents\learn\AddressBookMVC\obj\Debug\netcoreapp1.1\AddressBookMVC.dll
+C:\Users\amdubedy\Documents\learn\AddressBookMVC\obj\Debug\netcoreapp1.1\AddressBookMVC.pdb
