@@ -3,16 +3,15 @@
 	<title>AddressBook</title>
 </head> 
 <body> 
-	<h1>Welcome to AddressBook</h1> 
-	<ul>     
-		@foreach (var contact in Model)     
-		{          
-			if (contact !=null)         
-			{             
-				<li><strong><a href='/contact/contact.GetId()'>contact.GetName()</a></strong></li>
-			}
-		} 
-	</ul>
-	<p><a href="/contact/create">Add Contact</a></p> 
-	<p><a href="/contact/deleteall">Clear All Contacts</a></p> 
+	<h1>WELCOME TO YOUR ADDRESS BOOK</h1>
+	<br><br>
+	@foreach (var contact in Model)     
+	{          
+		if (contact !=null)         
+		{             
+			<li><strong><a href='/contact/contact.GetId()'>contact.GetName()</a></strong></li>
+		}
+	}
+	<button id="addcontact" type="button" class="btn btn-primary btn-lg"><a href="/contact/create">Add Contact</a></button> 
+	<button id="viewallcontact" type="button" class="btn btn-primary btn-lg"><a href="/contact/de">Delete All Contacts</a></p> 
 </body>
