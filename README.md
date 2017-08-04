@@ -1,6 +1,6 @@
-# _Paruls-Pizza_
+# _Address Book_
 
-#### _Git, HTML, CSS project for Epicodus(WEEK-4), 07-23-2016_
+#### _Web Apps with C# and Core MVC for Epicodus(C# WEEK-1), 08-04-2017_
 
 #### By _Parul Mishra Dubedy_
 
