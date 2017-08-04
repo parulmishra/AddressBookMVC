@@ -1,41 +1,74 @@
-<h1>WELCOME TO YOUR ADDRESS BOOK</h1>
-<br>
-<br>
-<h3>Add a New Contact</h3>
-<br>
-<br>
-<form action="/contact/new" method="post">
-	<label for ="name">Enter the name of the Contact</label>
-	<input id="name" name="name" type="text">
+<head>     
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>AddressBook</title>
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<div id="landingPage" class="well">
+	<h1>WELCOME TO YOUR ADDRESS BOOK</h1>
 	<br>
 	<br>
-	<label for ="phonenumber">Enter the phone number of the contact</label>
-	<input id="phonenumber" name="phonenumber" type="text">
+	<h2>Add a New Contact</h2>
 	<br>
 	<br>
-	<label for="country">Enter the Country for the contact</label>
-	<input id="country" name="country" type="text">
-	<br>
-	<br>
-	<label for="state">Enter the State for the contact</label>
-	<input id="state" name="state" type="text">
-	<br>
-	<br>
-	<label for="pincode">Enter the Pincode for the contact</label>
-	<input id="pincode" name="pincode" type="text">
-	<br>
-	<br>
-	<label for="city">Enter the City for the contact</label>
-	<input id="city" name="city" type="text">
-	<br>
-	<br>
-	<label for="housenumber">Enter the House Number for the contact</label>
-	<input id="housenumber" name="housenumber" type="text">
-	<br>
-	<br>
-	<label for="streetaddress">Enter the Street Address for the contact</label>
-	<input id="streetaddress" name="streetaddress" type="text">
-	<br>
-	<br>
-	<button type="submit">ADD</button>
-</form>
+	<form action="/contact/new" method="post">
+		<div class="form-group">
+			<label for ="name">Enter the name of the Contact</label>
+			<input id="name" name="name" type="text">
+		</div>
+		<br>
+		<div class="form-group">
+			<label for ="phonenumber">Enter the phone number of the contact</label>
+			<input id="phonenumber" name="phonenumber" type="text">
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="country">Enter the Country for the contact</label>
+			<input id="country" name="country" type="text">
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="state">Enter the State for the contact</label>
+			<input id="state" name="state" type="text">
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="pincode">Enter the Pincode for the contact</label>
+			<input id="pincode" name="pincode" type="text">
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="city">Enter the City for the contact</label>
+			<input id="city" name="city" type="text">
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="housenumber">Enter the House Number for the contact</label>
+			<input id="housenumber" name="housenumber" type="text">
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="streetaddress">Enter the Street Address for the contact</label>
+			<input id="streetaddress" name="streetaddress" type="text">
+		</div>
+		<br>
+		<br>
+		<button type="submit">ADD</button>
+	</form>
+</div>
+<style>
+#landingPage
+{
+	background-color: #FFFFCC;
+	padding-left: 100px;		
+	width: 50%;
+	height: 100%;
+}
+form
+{
+	font-size: 20px;
+}
+li
+{
+font-size: 16px;
+}
+</style>
